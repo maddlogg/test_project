@@ -1,0 +1,87 @@
+// @import "variables/variables.scss";
+// @import "mixins/mixins.scss";
+
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  src: url("../fonts/Inter-VariableFont_opsz\,wght.woff2");
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: inherit;
+
+  // border: 1px solid red;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  min-width: 375px;
+
+  font-family: "Inter", Arial, sans-serif;
+
+  box-sizing: border-box;
+
+  //   color: $colorTextMain;
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.button {
+  padding: 11px 30px 10px 25px;
+  min-width: 245px;
+  min-height: 40px;
+
+  //   color: $colorTextNav;
+  //   background-color: $colorBg;
+
+  //   &:hover {
+  //     // background-color: $colorButtonHvr;
+  //   }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@import "blocks/page-header.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/page-main.scss";
+@import "blocks/tab-list.scss";
+@import "blocks/form.scss";

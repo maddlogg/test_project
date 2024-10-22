@@ -1,0 +1,48 @@
+.form {
+  min-height: 854px;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main__item {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 16px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 9px;
+
+    font-size: 13px;
+    line-height: 15.73px;
+    font-weight: 400;
+
+    color: #232323;
+  }
+
+  &__input {
+    min-height: 40px;
+    padding: 13px 30px 12px 15px;
+
+    border: 1px solid #dfeaf2;
+    border-radius: 10px;
+
+    &::placeholder {
+      color: #718ebf;
+    }
+  }
+
+  &__button {
+    width: 100%;
+
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+
+    background-color: #1814f3;
+  }
+}

@@ -1,0 +1,84 @@
+.page-header {
+  position: relative;
+
+  min-height: 140px;
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 25px;
+    width: 100%;
+  }
+
+  &__content {
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    display: block;
+    margin: 0 auto;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    color: #343c6a;
+  }
+
+  &__search-field {
+    display: none;
+  }
+
+  &__search-field--mobile {
+    position: relative;
+
+    width: 100%;
+    min-height: 40px;
+    padding: 0 45px;
+
+    border-radius: 40px;
+    border: none;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.73px;
+    background-color: #f5f7fa;
+
+    &::placeholder {
+      color: #8ba3cb;
+    }
+  }
+
+  &__search-field__icon {
+    position: relative;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -29px;
+      left: 20px;
+
+      display: block;
+
+      width: 16px;
+      height: 16px;
+
+      background-image: url(../../img/magnifying-glass.svg);
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__avatar-mobile {
+    position: absolute;
+
+    right: 13px;
+    top: 25px;
+
+    clip-path: circle(17.5px at 51px 33%);
+  }
+}

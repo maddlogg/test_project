@@ -1,0 +1,20 @@
+.tab-list {
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 25px;
+
+  border-bottom: 1px solid #ebeef2;
+
+  &__item {
+    display: block;
+    width: 85px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 15.73px;
+    text-align: center;
+
+    color: #718ebf;
+  }
+}

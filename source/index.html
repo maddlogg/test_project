@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <nav class="main-navigation main-navigation--closed">
+          <img
+            class="main-navigation__logo"
+            src=""
+            width=""
+            height=""
+            alt="Логотип компании"
+          />
+          <button class="main-navigation__toggle" type="button"></button>
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#">Dashboard</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="">Transactions</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Accounts</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Investment</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Credit Cards</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Loans</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Services</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">My Privileges</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Setting</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__content">
+          <h1 class="page-header__title">Setting</h1>
+          <input
+            type="search"
+            class="page-header__search-field"
+            placeholder="Search for something"
+          />
+          <!-- <button></button>
+          <button></button> -->
+          <picture>
+            <source />
+            <img
+              class="page-header__avatar-mobile"
+              src="img/790e98129931897251abd3915a931233.jpeg"
+              width="80.77"
+              height="53.85"
+              alt="Ваш Аватар"
+            />
+          </picture>
+        </div>
+        <input
+          type="search"
+          class="page-header__search-field--mobile"
+          placeholder="Search for something"
+        />
+        <div class="page-header__search-field__icon"></div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <div class="page-main__tabs">
+          <ul class="page-main__tab-list tab-list">
+            <li class="tab-list__item">Edit profile</li>
+            <li class="tab-list__item">Preference</li>
+            <li class="tab-list__item">Security</li>
+          </ul>
+        </div>
+        <div class="page-main__tab-content">
+          <div class="page-main__tab-content__item">
+            <div class="page-main__tab-content__avatar">
+              <img
+                class="page-main__avatar-mobile-big"
+                src="img/790e98129931897251abd3915a931233.jpeg"
+                width="447.23"
+                height="298.15"
+                alt="Ваш Аватар"
+              />
+              <!-- <picture>
+                <source /> -->
+              <!-- <img
+                class="page-main__avatar-mobile-big"
+                src="img/790e98129931897251abd3915a931233.jpeg"
+                width="447.23"
+                height="298.15"
+                alt="Ваш Аватар"
+              /> -->
+              <!-- </picture> -->
+            </div>
+            <form class="page-main__form form" action="#" method="post">
+              <div class="form__main">
+                <div class="form__main__item">
+                  <label class="form__label name-label" for="name"
+                    >Your Name</label
+                  >
+                  <input
+                    class="form__input name-input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Charlene Reed"
+                  />
+                </div>
+                <div class="form__main__item">
+                  <label class="form__label email-label">Email</label>
+                  <input
+                    class="form__input email-input"
+                    type="email"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="charlenereed@gmail.com"
+                  />
+                </div>
+                <div class="form__main__item">
+                  <label class="form__label age-label">Date of Birth</label>
+                  <input
+                    class="form__input age-input"
+                    type="text"
+                    id="age"
+                    name="age"
+                    placeholder="25 January 1990"
+                  />
+                </div>
+                <div class="form__main__item">
+                  <label class="form__label address-label"
+                    >Permanent Address</label
+                  >
+                  <input
+                    class="form__input address-input"
+                    type="text"
+                    id="address"
+                    name="address"
+                    placeholder="San Jose, California, USA"
+                  />
+                </div>
+                <div class="form__main__item">
+                  <label class="form__label postal-label">Postal Code</label>
+                  <input
+                    class="form__input postal-input"
+                    type="text"
+                    id="postal"
+                    name="postal"
+                    placeholder="45962"
+                  />
+                </div>
+                <div class="form__main__item">
+                  <label class="form__label user-name-label">User Name</label>
+                  <input
+                    class="form__input user-name-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Charlene Reed"
+                  />
+                </div>
+                <div class="form__main__item">
+                  <label class="form__label password-label">Password</label>
+                  <input
+                    class="form__input password-input"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="**********"
+                  />
+                </div>
+                <div class="form__main__item">
+                  <label class="form__label present-address-label"
+                    >Present Address</label
+                  >
+                  <input
+                    class="form__input present-address-input"
+                    type="text"
+                    id="present-address"
+                    name="present-address"
+                    placeholder="San Jose, California, USA"
+                  />
+                </div>
+                <div class="form__main__item">
+                  <label class="form__label city-label">City</label>
+                  <input
+                    class="form__input city-input"
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="San Jose"
+                  />
+                </div>
+                <div class="form__main__item">
+                  <label class="form__label country-label">Country</label>
+                  <input
+                    class="form__input country-input"
+                    type="text"
+                    id="country"
+                    name="country"
+                    placeholder="USA"
+                  />
+                </div>
+              </div>
+              <div class="form__button-div">
+                <button class="form__button button" type="submit">Save</button>
+              </div>
+            </form>
+          </div>
+          <div class="page-main__tab-content__item"></div>
+          <div class="page-main__tab-content__item"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

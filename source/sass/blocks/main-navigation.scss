@@ -1,0 +1,50 @@
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 320px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  &__logo {
+    display: none;
+  }
+
+  &--closed {
+    .site-list {
+      display: none;
+    }
+
+    .main-navigation__toggle::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: block;
+      width: 13.74px;
+      height: 1.6px;
+
+      background-color: #343c6a;
+      border-radius: 5px;
+      box-shadow: 0 5px 0 0 #343c6a, 0 10px 0 0 #343c6a;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    top: 37px;
+    left: 25px;
+    z-index: 2;
+
+    display: block;
+    width: 13.74px;
+    height: 18px;
+
+    border: none;
+    background-color: #fff;
+
+    cursor: pointer;
+  }
+}
