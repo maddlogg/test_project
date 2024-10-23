@@ -19,23 +19,23 @@
       right: 0;
 
       display: block;
-      width: 13.74px;
-      height: 1.6px;
+      width: 18px;
+      height: 1.96px;
 
       background-color: #343c6a;
       border-radius: 5px;
-      box-shadow: 0 5px 0 0 #343c6a, 0 10px 0 0 #343c6a;
+      box-shadow: 0 6px 0 0 #343c6a, 0 12px 0 0 #343c6a;
     }
   }
 
   &__toggle {
     position: absolute;
-    top: 37px;
+    top: 34px;
     left: 25px;
     z-index: 2;
 
     display: block;
-    width: 13.74px;
+    width: 18px;
     height: 18px;
 
     border: none;
@@ -68,6 +68,9 @@
     height: 100vh;
 
     padding: 30px 41px;
+    padding-right: 30px;
+
+    border-right: 1px solid #e6eff5;
 
     position: absolute;
 
@@ -83,9 +86,12 @@
     }
 
     &__logo {
+      position: relative;
       display: block;
 
-      margin-bottom: 62px;
+      margin-top: 3px;
+      margin-left: 2px;
+      margin-bottom: 64px;
     }
 
     &__toggle {

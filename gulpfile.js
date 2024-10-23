@@ -80,7 +80,7 @@ gulp.task("images", function () {
 
 gulp.task("webp", function () {
   return gulp
-    .src(["build/img/**/*.{png,jpg}"], {
+    .src(["build/img/**/*.{png,jpg,jpeg}"], {
       encoding: false,
     })
     .pipe(webp({ quality: 90 }))
@@ -138,5 +138,9 @@ gulp.task("clean", function () {
 
 gulp.task(
   "build",
-  gulp.series("clean", "copy", gulp.parallel("styles", "html", "images"))
+  gulp.series(
+    "clean",
+    "copy",
+    gulp.parallel("styles", "html", "images", "webp")
+  )
 );

@@ -10,7 +10,11 @@
     position: relative;
 
     display: block;
-    width: 85px;
+    width: 80px;
+
+    &:first-child {
+      margin-right: 17px;
+    }
 
     font-size: 13px;
     font-weight: 500;
@@ -53,17 +57,26 @@
       &--active {
         &::before {
           width: 114px;
-          height: 3px;
+          height: 4px;
         }
       }
     }
   }
 
   @media (min-width: 1280px) {
+    min-height: 31px;
     justify-content: start;
 
     &__item {
-      margin-right: 46.5px;
+      width: 114px;
+
+      &:nth-child(2) {
+        margin-left: 29px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 40px;
+      }
     }
   }
 }

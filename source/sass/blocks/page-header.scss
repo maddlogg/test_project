@@ -6,7 +6,7 @@
   background-color: #fff;
   &__wrapper {
     margin: 0 auto;
-    padding: 25px;
+    padding: 25px 25px 20px 25px;
     width: 100%;
   }
 
@@ -90,6 +90,7 @@
     top: 25px;
 
     clip-path: circle(17.5px at 51px 33%);
+    cursor: pointer;
   }
 
   @media (min-width: 768px) {
@@ -108,11 +109,12 @@
   }
 
   @media (min-width: 1280px) {
-    min-height: 100px;
+    min-height: 90px;
 
+    border-bottom: 1px solid #e6eff5;
     &__wrapper {
       margin: 0 auto;
-      padding: 20px 40px;
+      padding: 20px 40px 20px;
       width: 100%;
     }
 
@@ -208,9 +210,9 @@
 
     &__search-field__icon {
       &::before {
-        top: -40px;
+        top: -41px;
         left: auto;
-        right: 470.55px;
+        right: 464.55px;
 
         width: 20px;
         height: 20px;
@@ -224,10 +226,10 @@
       width: 138.46px;
       height: 92.31px;
 
-      right: 22.69px;
+      right: 20.69px;
       top: 20px;
 
-      clip-path: circle(30px at 91px 33%);
+      clip-path: circle(30px at 89px 32.6%);
     }
   }
 }

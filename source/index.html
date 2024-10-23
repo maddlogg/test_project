@@ -10,13 +10,20 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-navigation main-navigation--closed">
-          <img
-            class="main-navigation__logo"
-            src="./img/Logo.png"
-            width="183"
-            height="36"
-            alt="Логотип компании"
-          />
+          <picture>
+            <source
+              type="image/webp"
+              srcset="img/Logo.webp 1x, img/Logo-2x.webp 2x"
+            />
+            <img
+              class="main-navigation__logo"
+              src="./img/Logo.png"
+              srcset="./img/Logo-2x.png"
+              width="183"
+              height="36"
+              alt="Логотип компании"
+            />
+          </picture>
           <button class="main-navigation__toggle" type="button"></button>
           <ul class="main-navigation__list site-list">
             <li class="site-list__item">
@@ -153,7 +160,7 @@
                   </clipPath>
                 </defs>
               </svg>
-              <a class="site-list__link" href="#">Investment</a>
+              <a class="site-list__link" href="#">Investments</a>
             </li>
             <li class="site-list__item">
               <svg
@@ -333,10 +340,14 @@
             <button class="page-header__search-field-button"></button>
           </div>
           <picture>
-            <source />
+            <source
+              type="image/webp"
+              srcset="img/avatar.webp 1x, img/avatar-2x.webp 2x"
+            />
             <img
               class="page-header__avatar-mobile"
-              src="img/790e98129931897251abd3915a931233.jpeg"
+              src="img/avatar.jpeg"
+              srcset="img/avatar-2x.jpeg"
               width="80.77"
               height="53.85"
               alt="Ваш Аватар"
@@ -356,31 +367,28 @@
       <div class="page-main__wrapper">
         <div class="page-main__tabs">
           <ul class="page-main__tab-list tab-list">
-            <li class="tab-list__item tab-list__item--active">Edit profile</li>
-            <li class="tab-list__item">Preference</li>
+            <li class="tab-list__item tab-list__item--active">Edit Profile</li>
+            <li class="tab-list__item">Preferences</li>
             <li class="tab-list__item">Security</li>
           </ul>
         </div>
         <div class="page-main__tab-content">
           <div class="page-main__tab-content__item">
             <div class="page-main__tab-content__avatar">
-              <img
-                class="page-main__avatar-mobile-big"
-                src="img/790e98129931897251abd3915a931233.jpeg"
-                width="447.23"
-                height="298.15"
-                alt="Ваш Аватар"
-              />
-              <!-- <picture>
-                <source /> -->
-              <!-- <img
-                class="page-main__avatar-mobile-big"
-                src="img/790e98129931897251abd3915a931233.jpeg"
-                width="447.23"
-                height="298.15"
-                alt="Ваш Аватар"
-              /> -->
-              <!-- </picture> -->
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="img/avatar.webp 1x, img/avatar-2x.webp 2x"
+                />
+                <img
+                  class="page-main__avatar-mobile-big"
+                  src="img/avatar.jpeg"
+                  srcset="img/avatar-2x.jpeg"
+                  width="447.23"
+                  height="298.15"
+                  alt="Ваш Аватар"
+                />
+              </picture>
             </div>
             <form class="page-main__form form" action="#" method="post">
               <div class="form__main">
@@ -399,7 +407,23 @@
                     />
                   </div>
                   <div class="form__main__item">
-                    <label class="form__label email-label">Email</label>
+                    <label class="form__label user-name-label" for="user-name"
+                      >User Name</label
+                    >
+                    <input
+                      class="form__input user-name-input"
+                      type="text"
+                      id="user-name"
+                      name="user-name"
+                      placeholder="Charlene Reed"
+                    />
+                  </div>
+                </div>
+                <div class="form__main__wrapper">
+                  <div class="form__main__item">
+                    <label class="form__label email-label" for="email"
+                      >Email</label
+                    >
                     <input
                       class="form__input email-input"
                       type="email"
@@ -411,7 +435,23 @@
                     />
                   </div>
                   <div class="form__main__item">
-                    <label class="form__label age-label">Date of Birth</label>
+                    <label class="form__label password-label" for="password"
+                      >Password</label
+                    >
+                    <input
+                      class="form__input password-input"
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="**********"
+                    />
+                  </div>
+                </div>
+                <div class="form__main__wrapper">
+                  <div class="form__main__item">
+                    <label class="form__label age-label" for="age"
+                      >Date of Birth</label
+                    >
                     <input
                       class="form__input age-input"
                       type="text"
@@ -421,7 +461,23 @@
                     />
                   </div>
                   <div class="form__main__item">
-                    <label class="form__label address-label"
+                    <label
+                      class="form__label present-address-label"
+                      for="present-address"
+                      >Present Address</label
+                    >
+                    <input
+                      class="form__input present-address-input"
+                      type="text"
+                      id="present-address"
+                      name="present-address"
+                      placeholder="San Jose, California, USA"
+                    />
+                  </div>
+                </div>
+                <div class="form__main__wrapper">
+                  <div class="form__main__item">
+                    <label class="form__label address-label" for="address"
                       >Permanent Address</label
                     >
                     <input
@@ -433,51 +489,9 @@
                     />
                   </div>
                   <div class="form__main__item">
-                    <label class="form__label postal-label">Postal Code</label>
-                    <input
-                      class="form__input postal-input"
-                      type="text"
-                      id="postal"
-                      name="postal"
-                      placeholder="45962"
-                    />
-                  </div>
-                </div>
-                <div class="form__main__wrapper">
-                  <div class="form__main__item">
-                    <label class="form__label user-name-label">User Name</label>
-                    <input
-                      class="form__input user-name-input"
-                      type="text"
-                      id="user-name"
-                      name="user-name"
-                      placeholder="Charlene Reed"
-                    />
-                  </div>
-                  <div class="form__main__item">
-                    <label class="form__label password-label">Password</label>
-                    <input
-                      class="form__input password-input"
-                      type="password"
-                      id="password"
-                      name="password"
-                      placeholder="**********"
-                    />
-                  </div>
-                  <div class="form__main__item">
-                    <label class="form__label present-address-label"
-                      >Present Address</label
+                    <label class="form__label city-label" for="city"
+                      >City</label
                     >
-                    <input
-                      class="form__input present-address-input"
-                      type="text"
-                      id="present-address"
-                      name="present-address"
-                      placeholder="San Jose, California, USA"
-                    />
-                  </div>
-                  <div class="form__main__item">
-                    <label class="form__label city-label">City</label>
                     <input
                       class="form__input city-input"
                       type="text"
@@ -486,8 +500,26 @@
                       placeholder="San Jose"
                     />
                   </div>
+                </div>
+
+                <div class="form__main__wrapper">
                   <div class="form__main__item">
-                    <label class="form__label country-label">Country</label>
+                    <label class="form__label postal-label" for="postal"
+                      >Postal Code</label
+                    >
+                    <input
+                      class="form__input postal-input"
+                      type="text"
+                      id="postal"
+                      name="postal"
+                      placeholder="45962"
+                    />
+                  </div>
+
+                  <div class="form__main__item">
+                    <label class="form__label country-label" for="country"
+                      >Country</label
+                    >
                     <input
                       class="form__input country-input"
                       type="text"
@@ -499,7 +531,7 @@
                 </div>
               </div>
               <div class="form__button-div">
-                <button class="form__button button" type="submit">Save</button>
+                <button class="form__button" type="submit">Save</button>
               </div>
             </form>
           </div>
