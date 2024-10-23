@@ -36,6 +36,8 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 
+  background-color: #f5f7fa;
+
   a {
     text-decoration: none;
   }
@@ -44,6 +46,10 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+
+  @media (min-width: 1280px) {
+    padding-left: 249px;
   }
 }
 
@@ -64,10 +70,6 @@ body {
 }
 
 .button {
-  padding: 11px 30px 10px 25px;
-  min-width: 245px;
-  min-height: 40px;
-
   //   color: $colorTextNav;
   //   background-color: $colorBg;
 
@@ -85,3 +87,4 @@ body {
 @import "blocks/page-main.scss";
 @import "blocks/tab-list.scss";
 @import "blocks/form.scss";
+@import "blocks/site-list.scss";

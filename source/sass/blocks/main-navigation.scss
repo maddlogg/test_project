@@ -2,10 +2,6 @@
   display: flex;
   flex-direction: column;
 
-  min-width: 320px;
-  margin-left: -20px;
-  margin-right: -20px;
-
   &__logo {
     display: none;
   }
@@ -46,5 +42,54 @@
     background-color: #fff;
 
     cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    &__toggle {
+      top: 39px;
+      left: 30px;
+
+      width: 18.74px;
+      height: 24px;
+    }
+
+    &--closed {
+      .main-navigation__toggle::before {
+        width: 18.74px;
+        height: 2.6px;
+
+        box-shadow: 0 7px 0 0 #343c6a, 0 14px 0 0 #343c6a;
+      }
+    }
+  }
+
+  @media (min-width: 1280px) {
+    width: 249px;
+    height: 100vh;
+
+    padding: 30px 41px;
+
+    position: absolute;
+
+    top: 0;
+    left: -249px;
+
+    background-color: #fff;
+
+    &--closed {
+      .site-list {
+        display: flex;
+      }
+    }
+
+    &__logo {
+      display: block;
+
+      margin-bottom: 62px;
+    }
+
+    &__toggle {
+      display: none;
+    }
   }
 }

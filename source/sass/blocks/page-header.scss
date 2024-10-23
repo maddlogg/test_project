@@ -3,6 +3,7 @@
 
   min-height: 140px;
 
+  background-color: #fff;
   &__wrapper {
     margin: 0 auto;
     padding: 25px;
@@ -46,6 +47,15 @@
     font-weight: 400;
     line-height: 15.73px;
     background-color: #f5f7fa;
+    outline: none;
+
+    &:hover {
+      border: 1px solid #5dafe9;
+    }
+
+    &:focus {
+      border: 2px solid #1072b8;
+    }
 
     &::placeholder {
       color: #8ba3cb;
@@ -80,5 +90,144 @@
     top: 25px;
 
     clip-path: circle(17.5px at 51px 33%);
+  }
+
+  @media (min-width: 768px) {
+    &__wrapper {
+      padding: 30px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__avatar-mobile {
+      right: 18px;
+      top: 30px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    min-height: 100px;
+
+    &__wrapper {
+      margin: 0 auto;
+      padding: 20px 40px;
+      width: 100%;
+    }
+
+    &__content {
+      justify-content: start;
+      height: 60px;
+
+      margin-bottom: 0;
+    }
+
+    &__title {
+      margin: 0;
+
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 33.89px;
+    }
+
+    &__search-field-wrapper {
+      display: flex;
+
+      padding-right: 65px;
+      margin-left: auto;
+    }
+
+    &__search-field-button {
+      width: 50px;
+      height: 50px;
+
+      margin-right: 30px;
+
+      background-color: #f5f7fa;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:nth-child(2) {
+        background-image: url(../../img/settings.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &:nth-child(3) {
+        background-image: url(../../img/notification.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
+
+    &__search-field {
+      display: block;
+      position: relative;
+
+      width: 255px;
+      min-height: 50px;
+      padding: 0 25px;
+      padding-left: 60px;
+      margin-right: 30px;
+
+      border-radius: 40px;
+      border: none;
+
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 18.15px;
+      background-color: #f5f7fa;
+      outline: none;
+
+      &:hover {
+        border: 1px solid #5dafe9;
+      }
+
+      &:focus {
+        border: 2px solid #1072b8;
+      }
+
+      &::placeholder {
+        color: #8ba3cb;
+      }
+    }
+
+    &__search-field--mobile {
+      display: none;
+    }
+
+    &__search-field__icon {
+      &::before {
+        top: -40px;
+        left: auto;
+        right: 470.55px;
+
+        width: 20px;
+        height: 20px;
+
+        background-position: 50% 50%;
+        background-size: 100%;
+      }
+    }
+
+    &__avatar-mobile {
+      width: 138.46px;
+      height: 92.31px;
+
+      right: 22.69px;
+      top: 20px;
+
+      clip-path: circle(30px at 91px 33%);
+    }
   }
 }
